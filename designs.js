@@ -21,6 +21,8 @@ $("form").submit(function() {
 	makeGrid();
 });
 
-$("body").on("mouseover", "td", function() {
-	$(this).css("background-color", $("input[type=color]").val());
+$("body").on("mousedown", "td", function() {
+	$("body").on("mouseover", "td", function() {
+		$(this).css("background-color", $("input[type=color]").val());
 	});
+});
