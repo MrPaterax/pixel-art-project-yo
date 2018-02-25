@@ -21,4 +21,5 @@ $("body").on("click", "td", function() {
 	$("body").on("mouseover", "td", function() {
 		$(this).css("background-color", $("input[type=color]").val());
 	});
+	
 });
